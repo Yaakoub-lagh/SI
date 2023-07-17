@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+Infant:wght@400;500;600;700;900&display=swap');
+
+:root{
+    --bg-clr : #f3f3f3;
+    --primary : #1D88BD;
+    --secondary : white;
+    --text : black;
+    --text-secondary : #ccc;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Ysabeau Infant', sans-serif;
+    color: var(--text);
+    background-color: var(--bg-clr);
+    width: 100%;
+}   
+
+.content{
+    width: 100%;
+}
+
+  
+  
+
+.app{
+    display: flex;
+    height: 100vh;
+    position: relative;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--primary);
+}
+
+.Sidebar{
+    padding: 10px;
+    background-color: var(--secondary);
+}
+
+.leftside{
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.leftside .menu ul{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.leftside .menu ul li{
+    transition: all .21s ease-in-out;
+    cursor: pointer;
+    padding: 10px;
+}
+.leftside .menu ul li:hover{
+    background-color: var(--text-secondary);
+    border-radius: 10px;
+}
+
+.leftside .menu .logo{
+    width: 150px;
+    height: 40px;
+}
+
+.logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+.leftside .account{
+    /* display: flex;
+    gap: 10px;
+    flex-direction: column; */
+}
+
+.Client,.Contact{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.addClient,.addContact{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+form{
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.login form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--bg-clr);
+}
+
+.form__row{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.input{
+    width: 100% !important;
+}
+.form{
+    display: flex;
+    width: 400px;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form__content{
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, .3);
+}
+
+.action{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.edit{
+    color: var(--primary);
+cursor: pointer;
+}
+
+.delete{
+    cursor: pointer;
+    color: #D1070D;
+}
+
+form .title{
+    font-size: 24px;
+    font-weight: 700;
+    color: #D1070D;
+}
+
+.Header{
+    display: flex;
+    background-color: var(--secondary);
+    width: 100%;
+    padding: 15px 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Header .title{
+    font-size: 28px;
+    color: #D1070D;
+    font-weight: 700;
+}
+
+.button{
+    border: 1px solid var(--primary);
+    padding: 10px 20px;
+    border-radius: 10px;
+    width: max-content;
+    cursor: pointer;
+    transition: all .21s ease-in;
+    background-color: transparent;
+}
+
+.button:hover{
+    background-color: var(--primary);
+    border-color: transparent;
+    color: var(--secondary);
+}
+
+.submit{
+    margin-top: 20px;
+
+}
+
+.image{
+    margin-bottom: 50px;
+}
+
+.datagrid{
+    width: 1000px;
+    height: 80vh;
+}
+
+
