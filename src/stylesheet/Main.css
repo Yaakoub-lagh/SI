@@ -146,6 +146,16 @@ form{
     gap: 15px;
 }
 
+.filter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+
 .form__content{
     background-color: white;
     padding: 20px;
@@ -168,6 +178,12 @@ cursor: pointer;
 .delete{
     cursor: pointer;
     color: #D1070D;
+}
+
+.filters .title{
+    font-size: 24px;
+    font-weight: 700;
+    color: #D1070D; 
 }
 
 form .title{
